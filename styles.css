@@ -1,0 +1,129 @@
+.attribution {
+    font-size: 0.6875rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.text-preset-1 {
+    font-family: "Figtree", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0;
+    color:#111111;
+}
+
+.text-preset-2 {
+    font-family: "Figtree", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0;
+    color:#6B6B6B;
+}
+
+.text-preset-3 {
+    font-family: "Figtree", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0;
+    color:#111111;
+}
+
+body {
+    background-color: #F4D04E;
+}
+
+.main-container {
+    display: grid;
+    place-content: center;
+    width: 100vw;
+    height: 100vh;
+
+    .card {
+        display: grid;
+        justify-content: center;
+        width: 384px;
+        height: 522px;
+        background-color: white;
+        border: 1px solid #111111;
+        border-radius: 20px;
+        box-shadow: 8px 8px 0 #000000;
+
+        .card-content-container {
+            display: grid;
+            gap: 24px;
+            margin: 24px;
+
+            .image-container {
+                height: 200px;
+
+                img {
+                    border-radius: 10px;
+                }
+            }
+
+            .text-container {
+                display: grid;
+                gap: 12px;
+                height: 194px;
+
+                .category-container {
+                    display: grid;
+                    place-content: center;
+                    width: 82px;
+                    height: 29px;
+                    background-color: #F4D04E;
+                    border-radius: 4px;
+
+                    .category-title {
+                        margin: 0;
+                        font-weight: bold;
+                    }
+                }
+
+                .publish-date-container {
+                    .publish-date {
+                        margin: 0;
+                    }
+                }
+
+                .title-container {
+                    .title {
+                        margin: 0;
+                    }
+                }
+
+                .description-container {
+                    .description {
+                        margin: 0;
+                    }
+                }
+            }
+
+            .author-container {
+                display: grid;
+                grid-template-columns: 1fr 3fr;
+                align-items: center;
+                padding: 0;
+                gap: 12px;
+                width: 129px;
+                height: 32px;
+
+                img {
+                    width: 32px;
+                    height: 32px;
+                }
+
+                p {
+                    margin: 0;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

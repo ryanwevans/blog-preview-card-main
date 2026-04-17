@@ -5,27 +5,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
   
   <title>Frontend Mentor | Blog preview card</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-
-  Learning
-
-  Published 21 Dec 2023
-
-  HTML & CSS foundations
-
-  These languages are the backbone of every website, defining structure, content, and presentation.
-
-  Greg Hooper
-  
+  <main class="main-container">
+    <div class="card">
+      <div class="card-content-container">
+        <div class="image-container">
+          <img src="./assets/images/illustration-article.svg" alt="Article image">
+        </div>
+        <div class="text-container">
+          <div class="category-container">
+            <p class="category-title text-preset-3">Learning</p>
+          </div>
+          <div class="publish-date-container">
+            <p class="publish-date text-preset-3">Published 21 Dec 2023</p>
+          </div>
+          <div class="title-container">
+            <h1 class="title text-preset-1">HTML & CSS foundations</h1>
+          </div>
+          <div class="description-container">
+            <p class="description text-preset-2">
+              These languages are the backbone of every website, defining structure, content, and presentation.
+            </p>
+          </div>
+        </div>
+        <div class="author-container">
+          <img src="./assets/images/image-avatar.webp" alt="Avatar image of author" class="avatar">
+          <p class="author text-preset-3">Greg Hooper</p>
+        </div>
+      </div>
+    </div>
+  </main>
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
