@@ -10,7 +10,7 @@
 .text-preset-1 {
     font-family: "Figtree", sans-serif;
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 800;
     line-height: 150%;
     letter-spacing: 0;
     color:#111111;
@@ -19,7 +19,7 @@
 .text-preset-2 {
     font-family: "Figtree", sans-serif;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 150%;
     letter-spacing: 0;
     color:#6B6B6B;
@@ -28,21 +28,24 @@
 .text-preset-3 {
     font-family: "Figtree", sans-serif;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 150%;
     letter-spacing: 0;
     color:#111111;
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
     background-color: #F4D04E;
 }
 
 .main-container {
+    flex: 1;
     display: grid;
     place-content: center;
-    width: 100vw;
-    height: 100vh;
 
     .card {
         display: grid;
@@ -95,6 +98,11 @@ body {
                 .title-container {
                     .title {
                         margin: 0;
+
+                        &:hover {
+                            cursor: pointer;
+                            color: #F4D04E;
+                        }
                     }
                 }
 
